@@ -1,0 +1,36 @@
+[submodule "Vim/bundle/jedi-vim"]
+	path = Vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "Vim/bundle/supertab"]
+	path = Vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "Vim/bundle/vim-autoclose"]
+	path = Vim/bundle/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+[submodule "Vim/bundle/vim-flake8"]
+	path = Vim/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
+[submodule "Vim/bundle/vim-nerdtree-tabs"]
+	path = Vim/bundle/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "Vim/bundle/--name"]
+	path = Vim/bundle/--name
+	url = https://github.com/sickill/vim-monokai.git
+[submodule "vim-colors-monokai"]
+	path = Vim/bundle/vim-monokai
+	url = https://github.com/sickill/vim-monokai.git
+[submodule "monokai"]
+	path = Vim/bundle/vim-monokai
+	url = https://github.com/sickill/vim-monokai.git
+[submodule "Vim/bundle/vim-colors-monokai"]
+	path = Vim/bundle/vim-colors-monokai
+	url = https://github.com/sickill/vim-monokai.git
+[submodule "Vim/bundle/vim-colors-molokai"]
+	path = Vim/bundle/vim-colors-molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule "Vim/bundle/vim-colors-badwolf"]
+	path = Vim/bundle/vim-colors-badwolf
+	url = https://github.com/sjl/badwolf.git
+[submodule "Vim/bundle/vim-colors-gruvbox"]
+	path = Vim/bundle/vim-colors-gruvbox
+	url = https://github.com/morhetz/gruvbox.git
