@@ -34,3 +34,6 @@
 [submodule "Vim/bundle/vim-colors-gruvbox"]
 	path = Vim/bundle/vim-colors-gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "Vim/bundle/powerline"]
+	path = Vim/bundle/powerline
+	url = https://github.com/powerline/powerline
