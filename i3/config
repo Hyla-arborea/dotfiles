@@ -196,3 +196,10 @@ bindsym $mod+F10 exec amixer -q set Master mute
 
 # lock screen
 bindsym $mod+p exec i3lock -i $HOME/Pictures/wallpapers/Chicago-skyscrapers.png -t
+
+# Sreen brightness controls
+# Use `xbacklight` to bind brightness keys on my keyboard to control the backlight.
+# Installing xbacklight package on Debian 8 (Jessie) is as easy as running the following command:
+# sudo apt-get install xbacklight
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
