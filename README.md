@@ -32,7 +32,7 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
     
     3. Update font cache for the path the font was moved to (root priveleges may be needed to update cache for the system-wide paths):
     
-      `fc-cache -vf /usr/share/fonts/`
+      `$ fc-cache -vf /usr/share/fonts/`
     
     4. Install the fontconfig file:
     
@@ -53,4 +53,4 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
 
 + ### [**flake8**](https://pypi.python.org/pypi/flake8/) package
 
-  `sudo apt-get install python-flake8` or `sudo pip install flake8`).
+  `sudo apt-get install python-flake8` or `sudo pip install flake8`.
