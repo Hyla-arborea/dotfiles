@@ -16,9 +16,11 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
 
   * Installing Powerline Tool
 
+  `$ pip install --user git+git://github.com/powerline/powerline`
+
     ```
     # Installing Poweline Tools
-    $ pip install --user git+git://github.com/powerline/powerline
+    
     
     # Installing Powerline Fonts
     $ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
