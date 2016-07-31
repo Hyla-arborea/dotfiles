@@ -16,7 +16,7 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
 
   * Installing Powerline Tool
 
-  `$ pip install --user git+git://github.com/powerline/powerline`
+   `$ pip install --user git+git://github.com/powerline/powerline`
 
     ```
     # Installing Poweline Tools
