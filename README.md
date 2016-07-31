@@ -12,7 +12,7 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
 
   Make sure your vim version supports Python, which is typical for versions >= 7.3.598. You can check this from within vim using `:echo has('python')`. It will return 1 if it has Python bindings or 0 if it does not. If the version is old, you may need to [compile vim from source](https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source). The Python version compiled into vim must be 2.6 or later. You can check this by `:python import sys; print sys.version` from within vim.
 
-+ ### Powerline Statusline plugin
++ ### [Powerline](https://github.com/powerline/powerline) Statusline plugin
 
   1. Installing Powerline Tool
 
