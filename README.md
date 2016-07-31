@@ -21,10 +21,10 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
   2. Installing Powerline Fonts
   
     1. Download the latest version of the symbol font and fontconfig file:
-    ```
-    $ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-    $ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-    ```
+      ```
+      $ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+      $ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+      ```
     
     2. Move the symbol font to a valid X font path. Valid font paths can be listed with `$ xset q`:
     
