@@ -53,4 +53,4 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
 
 + ### [**flake8**](https://pypi.python.org/pypi/flake8/) package
 
-  `sudo apt-get install python-flake8` or `sudo pip install flake8`.
+  `$ sudo apt-get install python-flake8` or `$ sudo pip install flake8`.
