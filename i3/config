@@ -203,3 +203,6 @@ bindsym $mod+p exec i3lock -i $HOME/Pictures/wallpapers/Chicago-skyscrapers.png 
 # sudo apt-get install xbacklight
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+# The middle button over a titlebar kills the window
+bindsym --release button2 kill
