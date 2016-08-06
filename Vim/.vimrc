@@ -103,4 +103,11 @@ set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 "set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 
 " =============================================================================
+" === In the case of backspace key problems ===
+" (see http://vim.wikia.com/wiki/Backspace_and_delete_problems)
+
+" Make backspace work like most other apps
+set backspace=indent,eol,start
+
+" =============================================================================
 " End of the file
