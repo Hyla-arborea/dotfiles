@@ -79,7 +79,12 @@ nnoremap <space> za
 
 set background=dark
 "let g:solarized_termcolors=256
-colorscheme gruvbox 
+colorscheme gruvbox
+
+" =============================================================================
+" === Automatically remove trailing whitespace upon saving the current buffer
+
+autocmd BufWritePre * :%s/\s\+$//e
 
 " =============================================================================
 " === Load settings saved ``.vim`` files in the ``settings`` subdirectory ===
