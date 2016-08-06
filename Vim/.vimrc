@@ -79,7 +79,12 @@ nnoremap <space> za
 
 set background=dark
 "let g:solarized_termcolors=256
-colorscheme gruvbox 
+colorscheme gruvbox
+
+" =============================================================================
+" === Automatically remove trailing whitespace upon saving the current buffer
+
+autocmd BufWritePre * :%s/\s\+$//e
 
 " =============================================================================
 " === Load settings saved ``.vim`` files in the ``settings`` subdirectory ===
@@ -89,5 +94,13 @@ for f in split(glob('$HOME/.vim/settings/*.vim'), '\n')
 endfor
 
 " =============================================================================
+" === Enable Powerline plugin ===
+
+" If Powerline is installed per user
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-let g:Powerline_fonts = 1
+
+" If Powerline is installed system-wide
+"set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+
+" =============================================================================
+" End of the file
