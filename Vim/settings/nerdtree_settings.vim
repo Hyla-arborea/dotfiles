@@ -6,4 +6,6 @@
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Toggle NERDTree
-nmap <leader>t<space> :NERDTreeToggle<CR>
+" (if 'mapleader' is not set or empty, a backslash is used. In this case type
+" \t to toggle NERDTree.
+nmap <leader>t :NERDTree<CR>
