@@ -10,9 +10,6 @@
 [submodule "Vim/bundle/vim-flake8"]
 	path = Vim/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
-[submodule "Vim/bundle/vim-nerdtree-tabs"]
-	path = Vim/bundle/vim-nerdtree-tabs
-	url = https://github.com/jistr/vim-nerdtree-tabs.git
 [submodule "Vim/bundle/--name"]
 	path = Vim/bundle/--name
 	url = https://github.com/sickill/vim-monokai.git
@@ -37,3 +34,6 @@
 [submodule "Vim/bundle/powerline"]
 	path = Vim/bundle/powerline
 	url = https://github.com/powerline/powerline
+[submodule "Vim/bundle/nerdtree"]
+	path = Vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
