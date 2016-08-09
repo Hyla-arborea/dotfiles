@@ -1,9 +1,30 @@
-[submodule "Vim/bundle/--name"]
-	path = Vim/bundle/--name
-	url = https://github.com/sickill/vim-monokai.git
-[submodule "vim-colors-monokai"]
-	path = Vim/bundle/vim-monokai
-	url = https://github.com/sickill/vim-monokai.git
-[submodule "monokai"]
-	path = Vim/bundle/vim-monokai
-	url = https://github.com/sickill/vim-monokai.git
+[submodule "vim/bundle/indentLine"]
+	path = vim/bundle/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "vim/bundle/jedi-vim"]
+	path = vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/powerline"]
+	path = vim/bundle/powerline
+	url = https://github.com/powerline/powerline.git
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/bundle/vim-autoclose"]
+	path = vim/bundle/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+[submodule "vim/bundle/vim-flake8"]
+	path = vim/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
+[submodule "vim/bundle/colors-gruvbox"]
+	path = vim/bundle/colors-gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "vim/bundle/colors-monokai"]
+	path = vim/bundle/colors-monokai
+	url = https://github.com/kevinsawicki/monokai.git
+[submodule "vim/bundle/colors-molokai"]
+	path = vim/bundle/colors-molokai
+	url = https://github.com/tomasr/molokai.git
