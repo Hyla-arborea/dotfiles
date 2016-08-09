@@ -37,6 +37,6 @@
 [submodule "Vim/bundle/nerdtree"]
 	path = Vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "Vim/bundle/clang_complete"]
-	path = Vim/bundle/clang_complete
-	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "Vim/bundle/vim-indent-guides"]
+	path = Vim/bundle/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
