@@ -13,11 +13,14 @@ set nocompatible
 
 execute pathogen#infect()
 
-" Now any plugins you wish to install can be extracted to a subdirectory under 
+" Now any plugins you wish to install can be extracted to a subdirectory under
 " ~/.vim/bundle, and they will be added to the ``runtimepath``.
-" If you don't like the directory name bundle, you can pass a runtime relative 
+" If you don't like the directory name bundle, you can pass a runtime relative
 " glob as an argument:
 " execute pathogen#infect('stuff/{}')
+
+" Generate documentation for all plugins in the bundle subdirectory.
+execute pathogen#helptags()
 
 " =============================================================================
 " === General configuration ===
