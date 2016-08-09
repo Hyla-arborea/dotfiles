@@ -19,6 +19,9 @@ execute pathogen#infect()
 " glob as an argument:
 " execute pathogen#infect('stuff/{}')
 
+" Generate documentation for all plugins in the bundle subdirectory.
+execute pathogen#helptags()
+
 " =============================================================================
 " === General configuration ===
 
