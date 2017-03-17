@@ -62,7 +62,7 @@ filetype plugin indent on
 filetype indent on
 set tabstop=4
 set shiftwidth=4     " Number of spaces to (auto)indent.
-set expandtab
+set expandtab        " To insert spaces whenevenr the tab key is pressed
 set smartindent      " Smart autoindenting when starting a new line.
 set cindent          " cindent
 set autoindent       " Always set autoindenting on
@@ -75,17 +75,23 @@ set autoindent       " Always set autoindenting on
 set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar instead of typing za
-nnoremap <space> za
+"nnoremap <space> za
+nnoremap zz za
 
 " =============================================================================
-" === Color scheme ===
+" === Color scheme and font ===
 
-set background=dark
-"let g:solarized_termcolors=256
-colorscheme gruvbox
+if has('gui_running')
+    set background=dark
+    colorscheme solarized
+    set guifont=Courier\ 10\ Pitch\ for\ Powerline\ Regular\ 12
+else
+    set background=dark
+    colorscheme gruvbox
+endif
 
 " =============================================================================
-" === Automatically remove trailing whitespace upon saving the current buffer
+" === Automatically remove trailing whitespaces upon saving the current buffer
 
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -97,20 +103,5 @@ for f in split(glob('$HOME/.vim/settings/*.vim'), '\n')
 endfor
 
 " =============================================================================
-" === Enable Powerline plugin ===
-
-" If Powerline is installed per user
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-
-" If Powerline is installed system-wide
-"set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
-
-" =============================================================================
-" === In the case of backspace key problems ===
-" (see http://vim.wikia.com/wiki/Backspace_and_delete_problems)
-
-" Make backspace work like most other apps
-set backspace=indent,eol,start
-
-" =============================================================================
-" End of the file
+let g:Powerline_fonts = 1
