@@ -1,0 +1,48 @@
+# @author: Sebastian Heimann (heimann@gfz-potsdam.de)
+#
+# ================================================
+# === Nima's note
+# Bash prompt scape sequences:
+#   \h    the hostname up to the first `.'
+#   \H    the hostname
+#   \u    the username of the current user
+#   \w    the current working directory
+#   \W    the basename of the current working directory
+#   \!    the history number of this command
+#   \#    the command number of this command
+#
+# To find out more about bash prompt escape sequences see:
+# http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html
+#
+# Reference:
+# http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/
+# ================================================
+
+
+black="\[\033[0;30m\]"
+blue="\[\033[0;34m\]"
+green="\[\033[0;32m\]"
+cyan="\[\033[0;36m\]"
+red="\[\033[0;31m\]"
+purple="\[\033[0;35m\]"
+brown="\[\033[0;33m\]"
+grey="\[\033[1;30m\]"
+
+lgray="\[\033[0;37m\]"
+lblue="\[\033[1;34m\]"
+lgreen="\[\033[1;32m\]"
+lcyan="\[\033[1;36m\]"
+lred="\[\033[1;31m\]"
+lpurple="\[\033[1;35m\]"
+lyellow="\[\033[1;33m\]"
+white="\[\033[1;37m\]"
+
+normal="\[\033[0;0m\]"	# normal term color
+
+colors=( $lblue $lyellow $lgreen $lcyan $lpurple $lgray )
+
+hostname=`hostname`
+
+cprom=${colors[`expr ${#hostname} % ${#colors[@]}`]}
+
+PS1="$cprom[\!] $normal\h:\W $cprom>$normal "

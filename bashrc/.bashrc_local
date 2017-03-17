@@ -1,0 +1,78 @@
+
+function prepend() {
+if [ $# = 0 ]; then
+echo prepend: Usage: prepend env_var_name val
+return 1;
+fi
+if [ "$2" = "/" ]; then node=/;
+else node="${2%*/}"; fi
+eval `echo val=\\\$$1`
+case $val in
+'') export $1=$node ;;
+$node|$node:*|*:$node:*|*:$node) ;;
+*) export $1=$node:$val ;;
+esac
+}
+
+function append() {
+if [ $# = 0 ]; then
+echo append: Usage: append env_var_name val
+return 1;
+fi
+if [ "$2" = "/" ]; then node=/;
+else node="${2%*/}"; fi
+eval `echo val=\\\$$1`
+case $val in
+'') export $1=$node ;;
+$node|$node:*|*:$node:*|*:$node) ;;
+*) export $1=$val:$node ;;
+esac
+}
+
+prepend PATH $HOME/bin
+
+
+# default progs
+export EDITOR=/usr/bin/vim
+export BROWSER=google-chrome
+export PAGER=less
+
+
+# locales
+
+export home=$HOME
+export SRC=${HOME}/src
+export src=$SRC
+export pap=${HOME}/Documents/papers
+
+# KIWI tools -------
+export KIWI_HOME=/usr/local/share/kiwi
+
+# PyCompLoc
+export PYTHONPATH=${PYTHONPATH}:${HOME}/codes/github/pycomploc
+
+# TauP -------
+export TAUP_HOME=/usr/local/TauP-2.1.2
+export PATH=$PATH:$TAUP_HOME/bin
+
+# class-path -------
+export CLASSPATH=${HOME}/java/SeismicityViewer50.jar:${HOME}/java/TauP-2.1.2.jar:${HOME}/java/TauP_NLL.jar
+
+# NonLinLoc -------
+export PATH=$PATH:/home/nooshiri/src/localization/NonLinLoc/NLL_beta_2016/src
+
+# FM-3D -------
+export PATH=$PATH:/usr/local/bin/fm3d
+
+# SAC -------
+. /usr/local/sac/bin/sacinit.sh
+
+# Grond -------
+export grond_des=/data/masterdes3/heimann/nimas_experiment/grond-trial
+export grond_loc=$HOME/codes/gitlab/grond-trial
+
+# SeisPy (J. Saul) -------
+. ${HOME}/.seispy/env.sh
+
+# disabling Qt accessibility support
+export QT_ACCESSIBILITY=0

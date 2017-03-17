@@ -1,0 +1,48 @@
+if [ "$PS1" ]; then
+#    echo "processing .bashrc_interactive" >> ${HOME}/bashrc_order
+
+    # don't put duplicate lines in the history. See bash(1) for more options
+    export HISTCONTROL=ignoredups
+
+    # enable color support of ls and also add handy aliases
+    eval `dircolors -b $HOME/.dircolors`
+    alias ls='ls --color=auto'
+
+    alias clc='clear'
+    alias ll='ls -l'
+
+    alias rm='rm -i'
+    alias cp='cp -i'
+    alias mv='mv -i'
+
+    alias gv='gv --spartan'
+
+    mygo () { gnome-open "$@" & }
+    alias go='mygo'
+
+    alias xe='gnome-terminal -x vim'
+    alias ne='gvim'
+
+    alias pyinst='sudo python setup.py install'
+
+    alias cop='rclip put'
+    alias pas='rclip get'
+
+    source "$HOME/.bashrc_colorprompt"
+
+    if [ -f ~/.cwd ]; then
+        cwd=`cat ~/.cwd`
+        if [ -d "$cwd" ]; then
+            \cd "$cwd"
+        fi
+    fi
+
+    mycd ()
+    {
+        \cd "$@"
+        echo $PWD > ~/.cwd
+    }
+
+    alias cd='mycd'
+
+fi
