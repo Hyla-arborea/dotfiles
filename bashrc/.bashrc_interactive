@@ -17,7 +17,7 @@ if [ "$PS1" ]; then
 
     alias gv='gv --spartan'
 
-    mygo () { gnome-open "$@" & }
+    mygo () { gnome-open "$@" >/dev/null 2>&1 & }
     alias go='mygo'
 
     alias xe='gnome-terminal -x vim'
