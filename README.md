@@ -16,10 +16,11 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
 
   1. Installing Powerline Tool
 
-    `$ pip install --user git+git://github.com/powerline/powerline`
+      `$ pip install --user git+git://github.com/powerline/powerline`
   
   2. Installing Powerline Fonts
       1. Download the latest version of the symbol font and fontconfig file:
+      
           ```
           $ wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
           $ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
@@ -27,25 +28,26 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
     
       2. Move the symbol font to a valid X font path. Valid font paths can be listed with `$ xset q`:
     
-      `$ sudo mv PowerlineSymbols.otf /usr/share/fonts/`
+          `$ sudo mv PowerlineSymbols.otf /usr/share/fonts/`
     
       3. Update font cache for the path the font was moved to (root priveleges may be needed to update cache for the system-wide paths):
     
-      `$ fc-cache -vf /usr/share/fonts/`
+          `$ fc-cache -vf /usr/share/fonts/`
     
       4. Install the fontconfig file:
     
-      `$ sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/`
+          `$ sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/`
     
       5. Patched fonts installation.
     
 The terminal emulator has to use a patched font to work properly with powerline-specific glyphs. Check [powerline-fonts](https://github.com/powerline/fonts) to access pre-patched versions of some popular, open-source coding fonts, or use [fontpatcher](https://github.com/powerline/fontpatcher) to patch custom fonts (see [powerline documentation](https://apw-bash-settings.readthedocs.io/en/latest/fontpatching.html) for the usage description).
       
 Move the patched font to a valid X font path and then update font cache for the path the font was moved to:
-```
-$ mv 'SomeFont for Powerline.otf' ~/.fonts/
-$ fc-cache -vf ~/.fonts/
-```
+
+    ```
+    $ mv 'SomeFont for Powerline.otf' ~/.fonts/
+    $ fc-cache -vf ~/.fonts/
+    ```
 
 ### [**Pathogen**](https://github.com/tpope/vim-pathogen) vim plugin manager
 
