@@ -41,7 +41,7 @@ Repository of my personalized dotfiles and configurations used for vim editor, i
     
 The terminal emulator has to use a patched font to work properly with powerline-specific glyphs. Check [powerline-fonts](https://github.com/powerline/fonts) to access pre-patched versions of some popular, open-source coding fonts, or use [fontpatcher](https://github.com/powerline/fontpatcher) to patch custom fonts (see [powerline documentation](https://apw-bash-settings.readthedocs.io/en/latest/fontpatching.html) for the usage description).
       
-      Move the patched font to a valid X font path and then update font cache for the path the font was moved to:
+Move the patched font to a valid X font path and then update font cache for the path the font was moved to:
       
       ```
       $ mv 'SomeFont for Powerline.otf' ~/.fonts/
