@@ -44,10 +44,10 @@ The terminal emulator has to use a patched font to work properly with powerline-
       
 Move the patched font to a valid X font path and then update font cache for the path the font was moved to:
 
-    ```
-    $ mv 'SomeFont for Powerline.otf' ~/.fonts/
-    $ fc-cache -vf ~/.fonts/
-    ```
+```
+$ mv 'SomeFont for Powerline.otf' ~/.fonts/
+$ fc-cache -vf ~/.fonts/
+```
 
 ### [**Pathogen**](https://github.com/tpope/vim-pathogen) vim plugin manager
 
